@@ -1,0 +1,15 @@
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:15:6:void TFT::SetPixel(int32_t, int32_t, uint16_t)	9
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:75:6:void TFT::SetPixel1(int32_t, int32_t, uint16_t)	8
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:86:6:void TFT::SetPixel4(int32_t, int32_t, uint16_t)	6
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:100:6:void TFT::SetPixel8(int32_t, int32_t, uint16_t)	5
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:109:6:void TFT::SetPixel16(int32_t, int32_t, uint16_t)	5
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:117:10:uint16_t TFT::GetPixel(int32_t, int32_t)	7
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:142:10:uint16_t TFT::GetPixel1(int32_t, int32_t)	6
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:156:10:uint16_t TFT::GetPixel16(int32_t, int32_t)	5
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:163:6:void TFT::SetColorToPallete(uint8_t, uint16_t)	1
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:168:6:void TFT::Fill(uint16_t)	11
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:214:6:void TFT::Fill1(uint16_t)	4
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:227:6:void TFT::Fill4(uint16_t)	3
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:241:6:void TFT::Fill8(uint16_t)	3
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:254:6:void TFT::Fill16(uint16_t)	3
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.cpp:284:10:uint16_t TFT::alphaBlend(uint8_t, uint16_t, uint16_t)	1
