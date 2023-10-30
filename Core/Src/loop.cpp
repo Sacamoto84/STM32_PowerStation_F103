@@ -16,6 +16,10 @@
 #include "logUART.h"
 #include "usart.h"
 
+#include "micros.h"
+
+
+
 void loop();
 
 //SSD1306 128 64 1 bit
@@ -38,6 +42,9 @@ ADS1243 adc;
 classLog Log;
 
 extern "C" void setup() {
+
+	DWT_Init();
+
 	tft.init(&LCD_0);
 	tft.Fill1(0);
 	tft.driver.Update();
@@ -67,15 +74,34 @@ extern "C" void setup() {
 //	Log.println("DOR1  0Eh %d", adc.readRegister(14));
 //	Log.println("DOR0  0Fh %d", adc.readRegister(15));
 
+
+
+
 	loop();
 }
 uint32_t v;
+float v1;
 void loop() {
 	while (1) {
 
 		adc.readAllRegister();
 
 		v = (adc.ADSregister.DOR2<<16) | (adc.ADSregister.DOR1<<8) | adc.ADSregister.DOR0;
+        v1 = (float)v / (256.0f*256.0f*256.0f);
+
+        adc.setPSEL(5);
+        adc.setNSEL(6);
+
+        adc.setPGA(PGA_128);
+
+        adc.readAllRegister();
+
+        adc.setPGA(PGA_4);
+
+        adc.setPSEL(1);
+        adc.setNSEL(4);
+
+        adc.readAllRegister();
 
 		//Log.clear();
 		Log.println("----");

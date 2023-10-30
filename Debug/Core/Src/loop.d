@@ -23,6 +23,8 @@ Core/Src/loop.o: ../Core/Src/loop.cpp ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.h ../Core/Inc/TFT_config.h \
  D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT_define.h \
@@ -32,8 +34,9 @@ Core/Src/loop.o: ../Core/Src/loop.cpp ../Core/Inc/main.h \
  D:/Dropbox/Actual/Drivers/Display/uTFT2/FontClassic/FontClassic.h \
  D:/Dropbox/Actual/Drivers/Display/uTFT2/FontClassic/../TFT.h \
  ../Core/Inc/ADS1243.h ../Core/Inc/gpio.h ../Core/Inc/spi.h \
- ../Core/Inc/spi.h D:/Dropbox/Actual/Drivers/libs/logUART/logUART.h \
- ../Core/Inc/usart.h
+ D:/Dropbox/Actual/Drivers/libs/Micros/micros.h ../Core/Inc/gpio.h \
+ ../Core/Inc/tim.h ../Core/Inc/spi.h \
+ D:/Dropbox/Actual/Drivers/libs/logUART/logUART.h ../Core/Inc/usart.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -59,6 +62,8 @@ Core/Src/loop.o: ../Core/Src/loop.cpp ../Core/Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.h:
 ../Core/Inc/TFT_config.h:
@@ -72,6 +77,9 @@ D:/Dropbox/Actual/Drivers/Display/uTFT2/FontClassic/../TFT.h:
 ../Core/Inc/ADS1243.h:
 ../Core/Inc/gpio.h:
 ../Core/Inc/spi.h:
+D:/Dropbox/Actual/Drivers/libs/Micros/micros.h:
+../Core/Inc/gpio.h:
+../Core/Inc/tim.h:
 ../Core/Inc/spi.h:
 D:/Dropbox/Actual/Drivers/libs/logUART/logUART.h:
 ../Core/Inc/usart.h:

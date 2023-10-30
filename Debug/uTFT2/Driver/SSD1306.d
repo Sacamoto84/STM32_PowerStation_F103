@@ -27,6 +27,8 @@ uTFT2/Driver/SSD1306.o: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/../Driver/TFT_Driver.h \
  D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT_define.h
@@ -58,6 +60,8 @@ D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/../TFT_define.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/../Driver/TFT_Driver.h:
 D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT_define.h:

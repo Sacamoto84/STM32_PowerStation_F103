@@ -32,6 +32,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>Micros</name>
+			<type>2</type>
+			<location>D:/Dropbox/Actual/Drivers/libs/Micros</location>
+		</link>
+		<link>
 			<name>logUART</name>
 			<type>2</type>
 			<location>D:/Dropbox/Actual/Drivers/libs/logUART</location>

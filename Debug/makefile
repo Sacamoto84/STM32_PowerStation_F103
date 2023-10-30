@@ -15,6 +15,7 @@ RM := rm -rf
 -include uTFT2/Bitmap/subdir.mk
 -include uTFT2/subdir.mk
 -include logUART/subdir.mk
+-include Micros/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
