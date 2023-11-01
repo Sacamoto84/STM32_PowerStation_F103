@@ -1,5 +1,7 @@
-Core/Src/loop.o: ../Core/Src/loop.cpp ../Core/Inc/main.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+GyverButton V3.8/GyverButton.o: \
+ D:/Dropbox/Actual/Drivers/Gyver/GyverButton\ V3.8/GyverButton.cpp \
+ D:/Dropbox/Actual/Drivers/Gyver/GyverButton\ V3.8/GyverButton.h \
+ ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -26,19 +28,8 @@ Core/Src/loop.o: ../Core/Src/loop.cpp ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.h ../Core/Inc/TFT_config.h \
- D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT_define.h \
- D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/TFT_Driver.h \
- D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT_define.h ../Core/Inc/i2c.h \
- ../Core/Inc/main.h \
- D:/Dropbox/Actual/Drivers/Display/uTFT2/FontClassic/FontClassic.h \
- D:/Dropbox/Actual/Drivers/Display/uTFT2/FontClassic/../TFT.h \
- ../Core/Inc/ADS1243.h ../Core/Inc/gpio.h ../Core/Inc/spi.h \
- D:/Dropbox/Actual/Drivers/libs/Micros/micros.h ../Core/Inc/gpio.h \
- ../Core/Inc/tim.h ../Core/Inc/spi.h \
- D:/Dropbox/Actual/Drivers/libs/logUART/logUART.h ../Core/Inc/usart.h \
- ../Core/Src/power.h \
- D:/Dropbox/Actual/Drivers/Gyver/GyverButton\ V3.8/GyverButton.h
+ ../Core/Inc/gpio.h ../Core/Inc/main.h
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton\ V3.8/GyverButton.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -67,23 +58,5 @@ Core/Src/loop.o: ../Core/Src/loop.cpp ../Core/Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
-D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.h:
-../Core/Inc/TFT_config.h:
-D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT_define.h:
-D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/TFT_Driver.h:
-D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT_define.h:
-../Core/Inc/i2c.h:
+../Core/Inc/gpio.h:
 ../Core/Inc/main.h:
-D:/Dropbox/Actual/Drivers/Display/uTFT2/FontClassic/FontClassic.h:
-D:/Dropbox/Actual/Drivers/Display/uTFT2/FontClassic/../TFT.h:
-../Core/Inc/ADS1243.h:
-../Core/Inc/gpio.h:
-../Core/Inc/spi.h:
-D:/Dropbox/Actual/Drivers/libs/Micros/micros.h:
-../Core/Inc/gpio.h:
-../Core/Inc/tim.h:
-../Core/Inc/spi.h:
-D:/Dropbox/Actual/Drivers/libs/logUART/logUART.h:
-../Core/Inc/usart.h:
-../Core/Src/power.h:
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton\ V3.8/GyverButton.h:

@@ -72,6 +72,18 @@ typedef enum {
 	PGA_128 = 0x07U /*!< SPI abort is ongoing                               */
 } _PGA;
 
+
+#define STOPC    0x0F //Выключает режим непрерывного вывода данных
+#define SELFCAL  0xF0 //Самокалибровка смещения и усиления
+#define SELFOCAL 0xF1 //Запускает процесс самокалибровки смещения
+#define SELFGCAL 0xF2
+#define SYSOCAL  0xF4
+#define SYSGCAL  0xF5
+#define DSYNC    0xFC
+#define SLEEP    0xFD
+#define RESET    0xFE
+
+
 class ADS1243 {
 public:
 
@@ -82,8 +94,7 @@ public:
 	// Получить байт, одновременно отправить данные
 	unsigned char XferByte(uint8_t txData) {
 		uint8_t rxData;
-		while (hspi1.State == HAL_SPI_STATE_BUSY)
-			;
+		while (hspi1.State == HAL_SPI_STATE_BUSY);
 		HAL_SPI_TransmitReceive(&hspi1, &txData, &rxData, 1, 1000);
 		return (unsigned char) rxData;
 	}
@@ -126,10 +137,31 @@ public:
 		ADSregister.DOR0 = XferByte(0);
 
 		delayMicroseconds(20);
-
+		XferByte(15);
 		ADS124x_CS_1;
 
 	}
+
+
+
+
+
+
+
+
+
+
+
+	void sendCommand(uint8_t cmd)
+	{
+		ADS124x_CS_0;
+		delayMicroseconds(20);
+		XferByte(cmd);
+		delayMicroseconds(20);
+		ADS124x_CS_1;
+	}
+
+
 
 	uint8_t read_bit(uint8_t value, int pos) {
 		return (value >> pos) & 1;
@@ -162,7 +194,21 @@ public:
 		writeRegister(1, r);
 	}
 
+	uint32_t readADC(uint8_t p, uint8_t n)
+	{
+		HAL_Delay(1);
+		sendCommand(DSYNC);
+		setPNSel(p, n);
+		HAL_Delay(41);
+		readAllRegister();
+		uint32_t r = (ADSregister.DOR2 << 16) | (ADSregister.DOR1 << 8)| ADSregister.DOR0;
+		return r;
+	}
+
+
 private:
+
+
 
 	void readSETUP(uint8_t p) {
 		ADSregister.SETUP.PGA = p & 0x7;

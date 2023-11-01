@@ -1,1 +1,1 @@
-D:/Dropbox/Actual/Drivers/Display/uTFT2/Bitmap/BitmapFromFlash24b.cpp:3:6:void BitmapFromFlash24b(TFT*, int16_t, int16_t, Bitmap*)	64	static
+D:/Dropbox/Actual/Drivers/Display/uTFT2/Bitmap/BitmapFromFlash24b.cpp:3:6:void BitmapFromFlash24b(TFT*, int16_t, int16_t, Bitmap*)	48	static

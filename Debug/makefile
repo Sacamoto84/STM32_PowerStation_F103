@@ -16,6 +16,7 @@ RM := rm -rf
 -include uTFT2/subdir.mk
 -include logUART/subdir.mk
 -include Micros/subdir.mk
+-include GyverButton\ V3.8/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -83,7 +84,7 @@ main-build: STM32_PowerStation.elf secondary-outputs
 
 # Tool invocations
 STM32_PowerStation.elf STM32_PowerStation.map: $(OBJS) $(USER_OBJS) D:\Dropbox\Actual\F103\STM32_PowerStation\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "STM32_PowerStation.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Dropbox\Actual\F103\STM32_PowerStation\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_PowerStation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+	arm-none-eabi-g++ -o "STM32_PowerStation.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Dropbox\Actual\F103\STM32_PowerStation\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_PowerStation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
