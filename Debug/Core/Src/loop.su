@@ -3,4 +3,4 @@
 ../Core/Src/loop.cpp:40:17:void TIM1_UP_IRQHandler()	8	static
 ../Core/Src/loop.cpp:110:6:void loop()	96	static
 ../Core/Src/loop.cpp:54:17:void setup()	32	static
-../Core/Src/loop.cpp:179:1:cpp)	16	static
+../Core/Src/loop.cpp:179:1:cpp)	24	static
