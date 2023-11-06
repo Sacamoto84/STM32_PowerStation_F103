@@ -1,6 +1,7 @@
-../Core/Inc/ADS1243.h:155:7:void ADS1243::sendCommand(uint8_t)	32	static
+../Core/Inc/ADS1243.h:145:7:void ADS1243::sendCommand(uint8_t)	32	static
 ../Core/Inc/ADS1243.h:113:7:void ADS1243::readAllRegister()	40	static
+../Core/Src/power.h:86:7:void Power::screenUI()	160	static
 ../Core/Src/loop.cpp:40:17:void TIM1_UP_IRQHandler()	8	static
-../Core/Src/loop.cpp:110:6:void loop()	96	static
-../Core/Src/loop.cpp:54:17:void setup()	32	static
-../Core/Src/loop.cpp:179:1:cpp)	24	static
+../Core/Src/loop.cpp:111:6:void loop()	104	static
+../Core/Src/loop.cpp:54:17:void setup()	24	static
+../Core/Src/loop.cpp:180:1:cpp)	24	static

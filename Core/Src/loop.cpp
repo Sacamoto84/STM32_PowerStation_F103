@@ -59,10 +59,10 @@ extern "C" void setup() {
 	tft.Fill1(0);
 	tft.driver.Update();
 	tft.SetFontColor(1, 0);
-	tft.GotoXY(20, 20);
-	FontClassicPuts(&tft, (char*) "1111", &Font_7x10, 0);
-	tft.LineH(10, 10, 50, 1);
-	tft.driver.Update();
+	//tft.GotoXY(20, 20);
+	//FontClassicPuts(&tft, (char*) "1111", &Font_7x10, 0);
+	//tft.LineH(10, 10, 50, 1);
+	//tft.driver.Update();
 
 	Log.init(&huart1);
 	Log.i("Start");
@@ -85,6 +85,7 @@ extern "C" void setup() {
 //	Log.println("DOR0  0Fh %d", adc.readRegister(15));
 
 	power.tft = &tft;
+    power.init();
 
 	power.adc.sendCommand(RESET);
 	power.adc.sendCommand(STOPC);

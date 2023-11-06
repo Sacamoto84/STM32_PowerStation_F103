@@ -142,16 +142,6 @@ public:
 
 	}
 
-
-
-
-
-
-
-
-
-
-
 	void sendCommand(uint8_t cmd)
 	{
 		ADS124x_CS_0;
