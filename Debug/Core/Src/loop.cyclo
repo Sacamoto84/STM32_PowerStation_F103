@@ -1,7 +1,44 @@
-../Core/Inc/ADS1243.h:145:7:void ADS1243::sendCommand(uint8_t)	4
-../Core/Inc/ADS1243.h:113:7:void ADS1243::readAllRegister()	22
-../Core/Src/power.h:86:7:void Power::screenUI()	142
-../Core/Src/loop.cpp:40:17:void TIM1_UP_IRQHandler()	3
-../Core/Src/loop.cpp:111:6:void loop()	84
-../Core/Src/loop.cpp:54:17:void setup()	7
+D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/TFT_Driver.h:25:7:void TFT_Driver::init(TFT_LCD_t*)	2
+D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/TFT_Driver.h:67:7:void TFT_Driver::Update()	2
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.h:37:7:void TFT::init(TFT_LCD_t*)	1
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.h:122:7:void TFT::SetFontColor(uint16_t, uint16_t)	1
+D:/Dropbox/Actual/Drivers/Display/uTFT2/TFT.h:132:7:void TFT::GotoXY(int16_t, int16_t)	1
+D:/Dropbox/Actual/Drivers/Display/uTFT2/FontClassic/FontClassic.h:38:20:char FontClassicPutc(TFT*, char, FontDef_t*, uint8_t)	8
+D:/Dropbox/Actual/Drivers/Display/uTFT2/FontClassic/FontClassic.h:75:20:char FontClassicPuts(TFT*, char*, FontDef_t*, uint8_t)	3
+../Core/Inc/ADS1243.h:95:16:unsigned char ADS1243::XferByte(uint8_t)	2
+../Core/Inc/ADS1243.h:102:7:void ADS1243::writeRegister(uint8_t, uint8_t)	3
+../Core/Inc/ADS1243.h:113:7:void ADS1243::readAllRegister()	3
+../Core/Inc/ADS1243.h:145:7:void ADS1243::sendCommand(uint8_t)	3
+../Core/Inc/ADS1243.h:156:10:uint8_t ADS1243::read_bit(uint8_t, int)	1
+../Core/Inc/ADS1243.h:161:7:void ADS1243::setPGA(_PGA)	1
+../Core/Inc/ADS1243.h:169:7:void ADS1243::setPNSel(uint8_t, uint8_t)	1
+../Core/Inc/ADS1243.h:187:11:uint32_t ADS1243::readADC(uint8_t, uint8_t)	1
+../Core/Inc/ADS1243.h:203:7:void ADS1243::readSETUP(uint8_t)	1
+../Core/Inc/ADS1243.h:209:7:void ADS1243::readMUX(uint8_t)	1
+../Core/Inc/ADS1243.h:214:7:void ADS1243::readACR(uint8_t)	1
+D:/Dropbox/Actual/Drivers/libs/logUART/logUART.h:16:7:void classLog::init(UART_HandleTypeDef*)	1
+D:/Dropbox/Actual/Drivers/libs/logUART/logUART.h:87:7:void classLog::i(const char*)	1
+D:/Dropbox/Actual/Drivers/Display/uTFT2/FontGFX/gfxfont.h:42:7:void GFXFONT::set_delta_x(int8_t)	1
+D:/Dropbox/Actual/Drivers/Display/uTFT2/FontGFX/gfxfont.h:46:7:void GFXFONT::init(TFT*)	1
+D:/Dropbox/Actual/Drivers/Display/uTFT2/FontGFX/gfxfont.h:51:7:void GFXFONT::Puts(char*)	2
+D:/Dropbox/Actual/Drivers/Display/uTFT2/FontGFX/gfxfont.h:96:7:void GFXFONT::setFont(const GFXfont*)	1
+D:/Dropbox/Actual/Drivers/Display/uTFT2/FontGFX/gfxfont.h:100:7:void GFXFONT::drawChar(unsigned char, uint8_t)	7
+D:/Dropbox/Actual/Drivers/Display/uTFT2/FontGFX/gfxfont.h:183:19:GFXglyph* GFXFONT::pgm_read_glyph_ptr(const GFXfont*, uint8_t)	1
+D:/Dropbox/Actual/Drivers/Display/uTFT2/FontGFX/gfxfont.h:187:18:uint8_t* GFXFONT::pgm_read_bitmap_ptr(const GFXfont*)	1
+D:/Dropbox/Actual/Drivers/Display/uTFT2/FontGFX/gfxfont.h:36:7:GFXFONT::GFXFONT()	1
+../Core/Src/power.h:60:7:void Power::init()	1
+../Core/Src/power.h:64:7:void Power::tickKey()	3
+../Core/Src/power.h:77:7:void Power::tick()	2
+../Core/Src/power.h:86:7:void Power::screenUI()	6
+../Core/Src/power.h:189:7:void Power::tickBattery()	1
+../Core/Src/power.h:195:7:void Power::screenBattery()	2
+../Core/Src/power.h:243:7:void Power::readB1()	1
+../Core/Src/power.h:249:7:void Power::readB2()	1
+../Core/Src/power.h:257:7:void Power::readB3()	1
+../Core/Src/power.h:264:7:void Power::readOut()	1
+../Core/Src/power.h:276:7:void Power::readI()	2
+../Core/Src/loop.cpp:40:17:void TIM1_UP_IRQHandler()	1
+../Core/Src/loop.cpp:54:17:void setup()	1
+../Core/Src/loop.cpp:111:6:void loop()	1
+../Core/Src/loop.cpp:180:1:void __static_initialization_and_destruction_0(int, int)	3
 ../Core/Src/loop.cpp:180:1:cpp)	1

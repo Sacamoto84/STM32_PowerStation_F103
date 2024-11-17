@@ -1,5 +1,5 @@
 D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/SSD1306.cpp:16:6:void TFT_Driver::SSD1306_WRITECOMMAND(uint8_t)	2
 D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/SSD1306.cpp:32:6:void TFT_Driver::SSD1306_WRITEDATA(uint8_t)	2
-D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/SSD1306.cpp:51:6:void TFT_Driver::SSD1306_Init()	33
+D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/SSD1306.cpp:51:6:void TFT_Driver::SSD1306_Init()	3
 D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/SSD1306.cpp:114:6:void TFT_Driver::SSD1306_UpdateScreen()	3
-D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/SSD1306.cpp:189:6:void TFT_Driver::SSD1306_Contrast(uint8_t)	3
+D:/Dropbox/Actual/Drivers/Display/uTFT2/Driver/SSD1306.cpp:189:6:void TFT_Driver::SSD1306_Contrast(uint8_t)	1

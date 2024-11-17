@@ -1,14 +1,14 @@
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:25:1:GButton::GButton(GPIO_TypeDef*, uint16_t, bool, bool)	4	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:37:6:void GButton::setDebounce(uint16_t)	0	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:40:6:void GButton::setTimeout(uint16_t)	0	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:43:6:void GButton::setClickTimeout(uint16_t)	0	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:46:6:void GButton::setStepTimeout(uint16_t)	0	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:49:6:void GButton::setType(bool)	0	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:52:6:void GButton::setDirection(bool)	0	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:55:6:void GButton::setTickMode(bool)	0	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:25:1:GButton::GButton(GPIO_TypeDef*, uint16_t, bool, bool)	24	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:37:6:void GButton::setDebounce(uint16_t)	16	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:40:6:void GButton::setTimeout(uint16_t)	16	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:43:6:void GButton::setClickTimeout(uint16_t)	16	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:46:6:void GButton::setStepTimeout(uint16_t)	16	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:49:6:void GButton::setType(bool)	16	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:52:6:void GButton::setDirection(bool)	16	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:55:6:void GButton::setTickMode(bool)	16	static
 D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:60:6:bool GButton::isPress()	16	static
 D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:69:6:bool GButton::isRelease()	16	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:80:6:bool GButton::isClick()	8	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:80:6:bool GButton::isClick()	16	static
 D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:89:6:bool GButton::isHolded()	16	static
 D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:99:6:bool GButton::isHold()	16	static
 D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:107:6:bool GButton::state()	16	static
@@ -16,9 +16,9 @@ D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:116:6:bool GBut
 D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:127:6:bool GButton::isDouble()	16	static
 D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:138:6:bool GButton::isTriple()	16	static
 D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:152:6:bool GButton::hasClicks()	16	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:162:9:uint8_t GButton::getClicks()	0	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:168:9:uint8_t GButton::getHoldClicks()	8	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:162:9:uint8_t GButton::getClicks()	16	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:168:9:uint8_t GButton::getHoldClicks()	16	static
 D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:176:6:bool GButton::isStep(uint8_t)	16	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:187:6:void GButton::resetStates()	0	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:199:6:void GButton::tick(bool)	12	static
-D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:206:6:void GButton::tick()	8	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:187:6:void GButton::resetStates()	16	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:199:6:void GButton::tick(bool)	16	static
+D:/Dropbox/Actual/Drivers/Gyver/GyverButton V3.8/GyverButton.cpp:206:6:void GButton::tick()	24	static

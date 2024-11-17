@@ -177,11 +177,11 @@ public:
 			gfxfont.Puts(str);
 		}
 
-		if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_15) == GPIO_PIN_SET) {
-			tft->GotoXY(2, 4);
-			sprintf(str, "CV", iOut);
-			FontClassicPuts(tft, str, &Font_11x18, 0);
-		}
+//		if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_15) == GPIO_PIN_SET) {
+//			tft->GotoXY(2, 4);
+//			sprintf(str, "CV", iOut);
+//			FontClassicPuts(tft, str, &Font_11x18, 0);
+//		}
 
 		tft->driver.Update();
 	}
@@ -264,20 +264,23 @@ public:
 	void readOut(void) {
 		uint32_t v = adc.readADC(2, 0);
 		vOut = (float) v / (256.0f * 256.0f * 256.0f) * 2.5F * 12.0 / 2.1269
-				* 3.000 / 3.004 * 5.0 / 4.997;
+				* 3.000 / 3.004 * 5.0 / 4.997 * 22.00 / 9.57 * 5.768/5.770 * 4.992/4.994;
 
 		//vOut = map(vOut, 1.2532, 11.004 , 1.2530, 11.015);
-		vOut -= (iOut) * 0.00008;
+
+		vOut = vOut - iOut/1000.0 * 0.02;
 
 	}
 
 //Чтение тока 7-6
 	void readI(void) {
 		uint32_t v = adc.readADC(7, 6);
-		iOut = (float) v / (256.0f * 256.0f * 256.0f) * 2.5F * 20000.0F;
+		iOut = (float) v / (256.0f * 256.0f * 256.0f) * 2.5F * 20000.0F - 0.001 ;
+		iOut *= 2.080/0.820;
 		if (iOut < 0)
 			iOut = 0;
-		iOut = map(iOut, 3.5F, 996.0f, 0.0f, 996.00f); // - 3.5F;
+
+		//iOut = map(iOut, 3.5F, 996.0f, 0.0f, 996.00f); // - 3.5F;
 
 	}
 
